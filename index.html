@@ -20,42 +20,50 @@
     <title>Frontend Mentor | Interactive rating component</title>
 
     <link rel="stylesheet" href="style.css" />
+    <script src="style.js" defer></script>
   </head>
   <body>
     <!-- Rating state start -->
-    <main>
-      <div class="container">
-        <img class="star" src="images/icon-star.svg" />
-        <div class="zone-text">
-          <h1 class="title">How did we do?</h1>
-          <p class="instruction">
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
-        <div class="zone-rating">
-          <p class="numbers">1 2 3 4 5</p>
-        </div>
-        <button class="button-submit" type="submit">Submit</button>
+    <div class="container">
+      <img class="star" src="images/icon-star.svg" />
+      <div class="zone-text">
+        <h1 class="title">How did we do?</h1>
+        <p class="instruction">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
       </div>
-
-      <!-- Rating state end -->
-
-      <!-- Thank you state start -->
-
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
-
-      <!-- Thank you state end -->
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+      <div class="zone-rating">
+        <p class="numbers">1</p>
+        <p class="numbers">2</p>
+        <p class="numbers">3</p>
+        <p class="numbers">4</p>
+        <p class="numbers">5</p>
       </div>
-    </main>
+      <button class="button-submit" type="submit">SUBMIT</button>
+    </div>
+
+    <!--  <div class="zone-thank-you">
+        <img
+          class="img-thank-you"
+          src="images/illustration-thank-you.svg"
+          alt="illustration-thank-you"
+        />
+        <p class="rating-score">
+          You selected <span id="rating-value"></span> out of 5
+        </p>
+        <h1 class="title">Thank you!</h1>
+        <p class="text-thank-you">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div> -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
   </body>
 </html>
