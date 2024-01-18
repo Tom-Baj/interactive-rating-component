@@ -29,10 +29,6 @@ p {
   color: var(--color-light-grey);
 }
 
-.hidden {
-  display: none;
-}
-
 .container-submit,
 .container-thank-you {
   background-color: var(--color-dark-blue);
