@@ -9,10 +9,15 @@
 }
 
 body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Overpass", sans-serif;
   background-color: var(--color-very-dark-blue);
   font-size: 15px;
-  max-width: 100vh;
+  min-height: 100vh;
   margin: auto;
 }
 
@@ -24,15 +29,42 @@ p {
   color: var(--color-light-grey);
 }
 
-.container {
+.hidden {
+  display: none;
+}
+
+.container-submit,
+.container-thank-you {
   background-color: var(--color-dark-blue);
-  margin: 10em auto;
   max-width: 350px;
   border-radius: 20px;
   height: auto;
   display: flex;
   flex-direction: column;
   padding: 2em;
+  margin: 2em 0;
+}
+
+.container-submit {
+  position: relative;
+  z-index: 1;
+}
+
+.container-thank-you {
+  max-width: 350px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.img-thank-you {
+  width: 50%;
+  margin: 1.5em;
 }
 
 .star {
@@ -48,11 +80,25 @@ p {
   align-items: center;
 }
 
+.rating-score {
+  color: var(--color-orange);
+  background-color: var(--backgroud);
+  border-radius: 30px;
+  padding: 0.3em;
+  width: 50%;
+  text-align: center;
+}
+
+.text-thank-you {
+  text-align: center;
+  width: 98%;
+}
+
 .numbers {
   color: var(--color-light-grey);
   background-color: var(--backgroud);
-  width: 3em;
-  height: 3em;
+  width: 3.2em;
+  height: 3.2em;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -74,23 +120,31 @@ button {
   margin-top: 1.5em;
 }
 
-.button-submit {
+#button-submit {
   background-color: var(--color-orange);
   color: var(--color-white);
   border-radius: 50px;
   height: 3em;
   letter-spacing: 2px;
+  margin-top: 2.5em;
 }
 
-.button-submit:hover {
+#button-submit:hover {
   background-color: var(--color-white);
   color: var(--color-orange);
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 375px) {
   body {
     font-size: 14px;
-    padding: 1.3em;
+    padding: 1em;
+  }
+  .container-thank-you {
+    max-width: 300px;
   }
 }
 
